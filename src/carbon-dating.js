@@ -14,7 +14,6 @@ module.exports = function dateSample(sampleActivity) {
   // t = ln(MODERN_ACTIVITY / sampleActivity) / k
   // k = 0.693 / HALF_LIFE_PERIOD
   out = Math.log(MODERN_ACTIVITY / sampleActivity)/(0.693/HALF_LIFE_PERIOD);
-  console.log('sample:', sampleDigit);
 
   return out;
 };
