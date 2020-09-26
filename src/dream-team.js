@@ -16,7 +16,7 @@ module.exports = function createDreamTeam(members) {
     // console.log('el', el, 'filter:', compaundFilter);
     return compaundFilter;
   })
-  console.log('members after filter:', members);
+  // console.log('members after filter:', members);
 
   const arrMap = members.map(el => el.trim().toUpperCase()).
                                     sort().map(el => {
@@ -24,7 +24,7 @@ module.exports = function createDreamTeam(members) {
                                     }).
                                     join('')
                                     ;
-  console.log('arrMap:', arrMap);
+  // console.log('arrMap:', arrMap);
 
   out = arrMap;
   return out;
